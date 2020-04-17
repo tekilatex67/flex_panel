@@ -34,10 +34,17 @@ body {
     font-size: 20px;
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
+=======
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+>>>>>>> ebfec823993e663680c9b5f5afdc3df0f7941d86
 }
 
 .panel1 {
@@ -80,9 +87,15 @@ body {
     width: 100%;
     transition: transform 0.5s;
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
     align-items: center;
     flex: 1;
+=======
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+>>>>>>> ebfec823993e663680c9b5f5afdc3df0f7941d86
 }
 
 .panel p {
@@ -111,5 +124,9 @@ body {
 
 .panel.open {
     font-size: 40px;
+<<<<<<< HEAD
     flex: 4;
+=======
+    flex: 5;
+>>>>>>> ebfec823993e663680c9b5f5afdc3df0f7941d86
 }
