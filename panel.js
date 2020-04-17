@@ -8,8 +8,8 @@ function toggleActive(e) {
     if (e.propertyName.includes('flex')) {
         this.classList.toggle('active');
     }
-    if (!this.classList.contains('open') && this.classList.contains('open-active')) {
-        this.classList.remove('open-active');
+    if (!this.classList.contains('open') && this.classList.contains('active')) {
+        this.classList.remove('active');
     };
 }
 
