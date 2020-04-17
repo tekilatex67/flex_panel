@@ -19,6 +19,7 @@ body {
 .panels {
     min-height: 100vh;
     overflow: hidden;
+    display: flex;
 }
 
 .panel {
@@ -33,6 +34,10 @@ body {
     font-size: 20px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
 }
 
 .panel1 {
@@ -74,6 +79,10 @@ body {
     margin: 0;
     width: 100%;
     transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .panel p {
@@ -87,6 +96,20 @@ body {
     font-size: 4em;
 }
 
+.panel p:nth-child(1) {
+    transform: translateY(-100%);
+}
+
+.panel p:nth-child(3) {
+    transform: translateY(100%);
+}
+
+.active p:nth-child(1),
+.active p:nth-child(3) {
+    transform: translateY(0%);
+}
+
 .panel.open {
     font-size: 40px;
+    flex: 4;
 }
