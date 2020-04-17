@@ -96,20 +96,20 @@ body {
     font-size: 4em;
 }
 
-.panel.open {
-    font-size: 40px;
-    flex: 5;
-}
-
-.panel>*:first-child {
+.panel p:nth-child(1) {
     transform: translateY(-100%);
 }
 
-.panel>*:last-child {
+.panel p:nth-child(3) {
     transform: translateY(100%);
 }
 
-.panel.open-active>*:first-child,
-.panel.open-active>*:last-child {
-    transform: translateY(0);
+.active p:nth-child(1),
+.active p:nth-child(3) {
+    transform: translateY(0%);
+}
+
+.panel.open {
+    font-size: 40px;
+    flex: 5;
 }
